@@ -1,0 +1,23 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 2rem 2rem 2rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#root > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  height: 100vh;
+  overflow: auto;
+}
+
