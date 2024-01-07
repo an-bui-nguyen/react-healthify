@@ -20,9 +20,9 @@ const Welcome = () => {
   }
 
   return (
-    <section id='welcome'>
+    <section id='welcome' className='body-center mt-3'>
       <div>
-        <img className="d-block mx-auto mb-2" src='src/assets/health-health.png' alt="" width="100" height="100"></img>
+        <img className="d-block mx-auto mb-2" src='./assets/health-health.png' alt="" width="100" height="100"></img>
         <div className="col-lg-6 col-md-8 col-sm-8 mx-auto mb-4">
           <h1>Hello, my name is Healthify, and your name is...?</h1>
         </div>

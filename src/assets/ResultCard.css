@@ -10,14 +10,14 @@
   padding: 1.1rem 2.5rem
 }
 
-.card-body div h2, .card-body div h3, .card-body div h4 {
-  font-size: 1.5rem;
+.result-card div h2, .result-card div h3, .result-card div h4 {
+  font-size: 18px;
 }
 
-.card-body h1 {
-  font-size: 1.75rem;
+.result-card div h1 {
+  font-size: 22px;
 }
 
 .card{
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }

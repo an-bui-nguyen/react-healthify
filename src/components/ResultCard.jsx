@@ -1,9 +1,12 @@
 import { Parser as HtmlToReactParser } from 'html-to-react'
 import { useState, forwardRef, useImperativeHandle } from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../assets/ResultCard.css'
 
 const ResultCard = forwardRef((props, refs) => {
   ResultCard.displayName = 'ResultCard'
+
+  const navigate = useNavigate()
 
   const topic = props.topic
   const [visible, setVisible] = useState(false)
@@ -21,6 +24,10 @@ const ResultCard = forwardRef((props, refs) => {
 
   const setToHide = () => {
     setVisible(false)
+  }
+
+  const handleLearnMore = (topic) => {
+    navigate(`/result/${topic.Id}`)
   }
 
   useImperativeHandle(refs, () => {
@@ -43,6 +50,8 @@ const ResultCard = forwardRef((props, refs) => {
               <div className="pt-3">
                 {reactElement}
               </div>
+              {topic.Sections.section.length >= 2
+               && <button className='btn btn-outline-primary' onClick={() => handleLearnMore(topic)}>Learn more</button>}
             </div>
         }
       </div>

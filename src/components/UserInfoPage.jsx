@@ -3,13 +3,16 @@ import '../assets/UserInfoPage.css'
 import { addUserInfoToLocalStorage } from '../reducers/userReducer'
 import { useNavigate } from 'react-router-dom'
 import { setData } from '../reducers/dataReducer'
+import { setNavigationInLocalStorage } from '../reducers/navigationReducer'
+import Welcome from './Welcome'
 
 const UserInfoPage = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const user = useSelector(state => state.user)
   if (!user) {
-    return null
+    dispatch(setNavigationInLocalStorage('/'))
+    return <Welcome />
   }
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -21,12 +24,12 @@ const UserInfoPage = () => {
   }
 
   return (
-    <div>
-      <img className="d-block mx-auto mb-2" src='src/assets/health-health.png' alt="" width="100" height="100"></img>
+    <div className='body-center'>
+      <img className="d-block mx-auto mb-2" src='./assets/health-health.png' alt="" width="100" height="100"></img>
       <h2 className='mb-3'>Hello, {user.name}!</h2>
       <p className='col-lg-6 col-md-8 col-sm-8 mx-auto'>To customize your health bulletin, tell me a bit more about yourself.</p>
       <form onSubmit={handleSubmit}>
-        <div className="d-block mx-auto mb-3 col-lg-4 col-md-6 col-sm-6">
+        <div className="d-block mx-auto mb-3">
           <input type="number" min="0" className="form-control col-2" id="age" name="age" size="50" required placeholder="Enter your age."/>
           <select className="form-select mb-3 col-2 text-center" id="sex" name="sex" aria-label="Default select example" aria-required="true" style={{ paddingRight:'0.75rem' }}>
             <option value="female">Female</option>

@@ -1,18 +1,15 @@
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import Select from 'react-select'
 import { useState } from 'react'
 import { getDataWithCategories, setData } from '../reducers/dataReducer'
 import { useNavigate } from 'react-router-dom'
+import * as data from '../assets/data.json'
 
 const CategorySelect = () => {
-  const categories = useSelector(state => state.data.categories)
+  const categories = data.default
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const [userChoice, setUserChoice] = useState(null)
-
-  if (!categories) {
-    return null
-  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -23,6 +20,22 @@ const CategorySelect = () => {
           categories.push(...element.value)
         })
         dispatch(getDataWithCategories(categories.join(',')))
+        window.localStorage.setItem('loggedCategories', categories.join(','))
+        dispatch(setData(null))
+        navigate('/result')
+      }
+    }
+  }
+
+  const handleClickSubmit = () => {
+    if (userChoice) {
+      if (userChoice.length !== 0) {
+        const categories = []
+        userChoice.forEach(element => {
+          categories.push(...element.value)
+        })
+        dispatch(getDataWithCategories(categories.join(',')))
+        window.localStorage.setItem('loggedCategories', categories.join(','))
         dispatch(setData(null))
         navigate('/result')
       }
@@ -41,6 +54,7 @@ const CategorySelect = () => {
         blurInputOnSelect={false}
         onChange={(choice) => {console.log(choice); setUserChoice(choice)}}
         onKeyDown={handleSubmit}
+        onMenuClose={handleClickSubmit}
         placeholder='search health topics'
       />
     </form>

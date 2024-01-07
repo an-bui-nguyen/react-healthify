@@ -1,0 +1,216 @@
+[
+  {
+      "value": [
+          15
+      ],
+      "label": "Cancer"
+  },
+  {
+      "value": [
+          16
+      ],
+      "label": "Diabetes"
+  },
+  {
+      "value": [
+          18
+      ],
+      "label": "Heart Health"
+  },
+  {
+      "value": [
+          19
+      ],
+      "label": "HIV and Other STDs"
+  },
+  {
+      "value": [
+          20
+      ],
+      "label": "Mental Health and Relationships"
+  },
+  {
+      "value": [
+          21
+      ],
+      "label": "Nutrition"
+  },
+  {
+      "value": [
+          23
+      ],
+      "label": "Obesity"
+  },
+  {
+      "value": [
+          24
+      ],
+      "label": "Physical Activity"
+  },
+  {
+      "value": [
+          25
+      ],
+      "label": "Regular Checkups"
+  },
+  {
+      "value": [
+          26
+      ],
+      "label": "Safety"
+  },
+  {
+      "value": [
+          27
+      ],
+      "label": "Screening Tests"
+  },
+  {
+      "value": [
+          28
+      ],
+      "label": "Sexual Health"
+  },
+  {
+      "value": [
+          29
+      ],
+      "label": "Vaccines (Shots)"
+  },
+  {
+      "value": [
+          30
+      ],
+      "label": "Talking with the Doctor"
+  },
+  {
+      "value": [
+          54
+      ],
+      "label": "Doctor and Midwife Visits"
+  },
+  {
+      "value": [
+          56
+      ],
+      "label": "Nutrition and Physical Activity"
+  },
+  {
+      "value": [
+          91
+      ],
+      "label": "Breast and Ovarian Cancer"
+  },
+  {
+      "value": [
+          92
+      ],
+      "label": "Cervical Cancer"
+  },
+  {
+      "value": [
+          93
+      ],
+      "label": "Skin Cancer"
+  },
+  {
+      "value": [
+          94
+      ],
+      "label": "Prostate Cancer"
+  },
+  {
+      "value": [
+          95
+      ],
+      "label": "Lung Cancer"
+  },
+  {
+      "value": [
+          96
+      ],
+      "label": "Colorectal Cancer"
+  },
+  {
+      "value": [
+          97,
+          99,
+          125
+      ],
+      "label": "Doctor Visits"
+  },
+  {
+      "value": [
+          98,
+          100,
+          102,
+          107,
+          108,
+          111
+      ],
+      "label": "Helping a Loved One"
+  },
+  {
+      "value": [
+          101,
+          106
+      ],
+      "label": "Shopping Lists"
+  },
+  {
+      "value": [
+          103
+      ],
+      "label": "Checkups for Adults"
+  },
+  {
+      "value": [
+          104
+      ],
+      "label": "Checkups for Children and Teens"
+  },
+  {
+      "value": [
+          105,
+          112
+      ],
+      "label": "Questions for the Doctor"
+  },
+  {
+      "value": [
+          109
+      ],
+      "label": "Mental Health"
+  },
+  {
+      "value": [
+          110
+      ],
+      "label": "Healthy Relationships"
+  },
+  {
+      "value": [
+          124
+      ],
+      "label": "Health Conditions"
+  },
+  {
+      "value": [
+          126
+      ],
+      "label": "Healthy Living"
+  },
+  {
+      "value": [
+          127
+      ],
+      "label": "Pregnancy"
+  },
+  {
+      "value": [
+          314
+      ],
+      "label": "Substance Use and Misuse"
+  }
+]
+

@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div>
+    <footer>
       <p>For more information, see <a href="https://health.gov/myhealthfinder">MyHealthFinder</a></p>
-    </div>
+    </footer>
   )
 }
 
