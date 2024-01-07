@@ -10,4 +10,4 @@ Features of the webpage includes:
 * A NodeJS backend to serve minified frontend React files.
 * Docker containerization for deployment to Fly.io.
 * RESTful API requests to [MyHealthFinder](https://health.gov/our-work/national-health-initiatives/health-literacy/consumer-health-content/free-web-content/apis-developers) to retrieve health data.
-* Modern styling and responsive web development using Flexbox, Boostrap, and Material UI.
+* Modern styling and responsive web development using Flexbox, Bootstrap, and Material UI.
