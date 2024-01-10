@@ -1,6 +1,6 @@
 # Healthify
 
-Link to the website [here](healthify.fly.dev)
+Link to the website [here](healthify.fly.dev).
 
 A single-page React application that pulls data from the United States' Department of Health and Human Services to provide information about preventative healthcare.
 
